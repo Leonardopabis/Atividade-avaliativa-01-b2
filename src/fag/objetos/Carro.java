@@ -58,11 +58,17 @@ public class Carro {
 			System.out.println("\nCor inválida!\n");
 		}
 	}
+	public void listar() {
+		System.out.printf("Vaga: %d | %s | %s | %s\n", vaga, nome, modelo, cor);
+	}
+
+	@Override
+	public String toString() {
+		return "Carro [nome=" + nome + ", modelo=" + modelo + ", cor=" + cor + ", vaga=" + vaga + "]";
+	}
 
 	
-	public String toString() {
-		return "vaga: "+vaga+" | "+nome+" | "+modelo+" | "+cor+"\n";
-	}
+
 
 	
 
